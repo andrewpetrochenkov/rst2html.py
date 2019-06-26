@@ -1,0 +1,14 @@
+{
+  "name": "django-template-cli",
+  "version": "2019.6.25",
+  "description": "CLI tool to render django template files",
+  "keywords": [
+    "django",
+    "template"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/django-template-cli.py",
+  "license": "Unlicense",
+  "bin": {
+    "django-template-cli": "./scripts/django-template-cli"
+  }
+}
