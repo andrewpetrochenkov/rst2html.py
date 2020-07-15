@@ -16,20 +16,12 @@ $ [sudo] pip install rst2html
 ```python
 from rst2html import rst2html
 
-rst2html('reStructuredText string')
+html, warning = rst2html('reStructuredText string')
 ```
 
-catch rst warnings/errors:
+`docutils` `report_level`
 ```python
-from contextlib import redirect_stderr
-import io
-
-target = io.StringIO()
-with redirect_stderr(target):
-    try:
-        html, error = rst2html('reStructuredText string'), target.getvalue().strip()
-    except Exception as e:
-        html, error = 'reStructuredText string', str(e)
+html, warning = rst2html('reStructuredText string',report_level=5)
 ```
 
 <p align="center">
